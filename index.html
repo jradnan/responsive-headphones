@@ -49,11 +49,46 @@
             <h1>Wireless <br> Headphones</h1>
             <h5>The smarter way to listen</h5>
             <h3>$199.00</h3>
-            <a href="#" class="btn" >Shop Now</a>
+            <a href="#" class="btn">Shop Now</a>
         </div>
     </section>
     <!-- Home end -->
+    <!-- ********* -->
+    <div class="main">
 
+        <div class="row">
+            <li><img src="img/main1.png" onclick="slider('img/product1.png')"></li>
+        </div>
+
+        <div class="row row2">
+            <li><img src="img/main2.png" onclick="slider('img/product2.png')"></li>
+        </div>
+
+        <div class="row row3">
+            <li><img src="img/main3.png" onclick="slider('img/product3.png')"></li>
+        </div>
+
+
+
+
+    </div>
+    <!-- ********* -->
+    <!-- bottom section -->
+    <a href="#" class="bottom">Scroll Down<i class='bx bx-down-arrow-circle'></i></a>
+    <!-- bottom section end -->
+    <!-- javascript -->
+    <script>
+        function slider(anything) {
+            document.querySelector('.one').src = anything;
+        }
+        let menu = document.querySelector('#menu-icon')
+        let navbar = document.querySelector('.navbar')
+
+        menu.onclick = () =>{
+            menu.classList.toggle('bx-x')
+            navbar.classList.toggle('open')
+        }
+    </script>
 </body>
 
 </html>
